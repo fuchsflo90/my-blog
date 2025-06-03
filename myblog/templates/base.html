@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{url_for('static', filename='css/output-style.css')}}">
-    <title>My Blog - {% block title %}{% endblock title %}</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+  <title>My Blog - {% block title %}{% endblock title %}</title>
 </head>
+
 <body>
-<h1 class='text-4xl text-center font-mono py-5 font-black text-emerald-600'>Here comes my blog</h1>
-{% include("navigation.html") %}
-<section>
-  <header>
-    {% block header %}{% endblock header %}
-  </header>
-  <main>
-    {% block content %}<p>No messages.</p>{% endblock content %}
-  </main>
-</section>
+  <h1 class='text-4xl text-center font-mono py-5 font-black text-emerald-600'>Here comes my blog</h1>
+  {% include("navigation.html") %}
+  <section>
+    <header>
+      {% block header %}{% endblock header %}
+    </header>
+    <main>
+      {% block content %}<p>No messages.</p>{% endblock content %}
+    </main>
+  </section>
 </body>
+
 </html>
