@@ -1,12 +1,9 @@
-from flask import Flask, render_template
+from flask import Flask
 
-app = Flask(__name__)
+from myblog import sites
 
+def create_app():
+    app = Flask(__name__)
 
-@app.route("/")
-def hello_world():
-    return render_template("index.html")
-
-
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=8000)
+    app.register_blueprint(sites.bp)
+    return app
