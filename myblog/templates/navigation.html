@@ -1,15 +1,14 @@
-<nav class="bg-gray-800">
-  <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+<nav class="border-b border-gray-800 mb-10">
+  <div class="">
     <div class="relative flex h-16 items-center justify-between">
       <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+        <div class="flex shrink-0 items-center">fuchsflo90 | this is my blog.</div>
         <div class="sm:ml-6">
-          <div class="flex space-x-4">
-            <a href="{{ url_for('sites.home') }}"
-              class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white" aria-current="page">home</a>
-            <a href="#"
-              class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">portfolio</a>
-            <a href="{{ url_for('sites.about') }}"
-              class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">about</a>
+          <div class="flex space-x-4 font-black">
+            <a href="{{ url_for('sites.home') }}" class="rounded-md px-3 py-2 text-sm hover:text-white"
+              aria-current="page">home</a>
+            <a href="#" class="rounded-md px-3 py-2 text-sm hover:text-white">portfolio</a>
+            <a href="{{ url_for('sites.about') }}" class="rounded-md px-3 py-2 text-sm hover:text-white">about</a>
           </div>
         </div>
       </div>
