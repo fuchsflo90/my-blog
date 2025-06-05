@@ -205,9 +205,6 @@
   .justify-between {
     justify-content: space-between;
   }
-  .justify-center {
-    justify-content: center;
-  }
   .space-x-4 {
     :where(& > :not(:last-child)) {
       --tw-space-x-reverse: 0;
@@ -231,8 +228,8 @@
   .px-3 {
     padding-inline: calc(var(--spacing) * 3);
   }
-  .px-16 {
-    padding-inline: calc(var(--spacing) * 16);
+  .px-20 {
+    padding-inline: calc(var(--spacing) * 20);
   }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
@@ -280,14 +277,14 @@
       justify-content: flex-start;
     }
   }
-  .sm\:px-18 {
+  .sm\:pr-50 {
     @media (width >= 40rem) {
-      padding-inline: calc(var(--spacing) * 18);
+      padding-right: calc(var(--spacing) * 50);
     }
   }
-  .lg\:px-20 {
+  .lg\:pr-100 {
     @media (width >= 64rem) {
-      padding-inline: calc(var(--spacing) * 20);
+      padding-right: calc(var(--spacing) * 100);
     }
   }
 }
